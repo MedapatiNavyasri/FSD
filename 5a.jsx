@@ -1,0 +1,28 @@
+import { createRoot } from 'react-dom/client';
+import React from 'react';
+const heading = React.createElement(
+    'h1',
+    null,
+    'Hello from React!'
+);
+const paragraph = React.createElement(
+    'p',
+    null,
+    'This paragraph was rendered without JSX.'
+);
+const list = React.createElement(
+    'ul',
+    null,
+    React.createElement('li', null, 'ExpressJS'),
+    React.createElement('li', null, 'ReactJS'),
+    React.createElement('li', null, 'MongoDB')
+);
+const container = React.createElement(
+    'div',
+    null,
+    heading,
+    paragraph,
+    list
+);
+const root = createRoot(document.getElementById('root'));
+root.render(container);

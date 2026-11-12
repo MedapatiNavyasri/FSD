@@ -1,0 +1,12 @@
+$primary-color: teal;
+.container {
+    background-color: lightgray;
+    padding: 20px;
+    h1 {
+        color: $primary-color;
+    }
+    .card {
+        background-color: white;
+        border-radius: 10px;
+    }
+}
